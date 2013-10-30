@@ -1,0 +1,282 @@
+
+\newenvironment{articleonly}{\mode<article>}{\mode<all>}
+
+%\mode<presentation>{\usetheme{Berlin}}
+
+\title{\LaTeX{} for Philosophers}
+
+\author{Richard Zach}
+
+\begin{document}
+
+\frame{\maketitle}
+
+\mode<presentation>{
+  \frame{
+    \frametitle{Outline}
+    \tableofcontents[nosubsection]}}
+
+\section{What is \LaTeX?}
+
+\begin{frame}
+  \frametitle{\LaTeX{} is a Typesetting System}
+
+\begin{itemize}
+\item \LaTeX{} is a progam that takes a plain text file containing
+  text and markup instructions and turns it into a typeset document
+  (usually in PDF format).
+\item \LaTeX{} is open source and cross-platform.
+\item \LaTeX{} comes with hundreds of \emph{packages} dealing with
+  anything from producing presentation slides (such as this) to
+  dealing with bibliographical references to typesetting musical
+  scores.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{\LaTeX{} is a Markup Language}
+
+\begin{itemize}
+\item \LaTeX{} documents do not contain formatting---all formatting,
+  sectioning, special symbols and formulas, etc., are coded using
+  plain text.
+\item For instance:
+  \begin{itemize}
+    \item an \emph{emphasized} piece of text is coded as
+      \verb+\emph{emphasized}+,
+    \item a formula such as \[\exists x(\phi(x) \land \psi(x))\] as
+      \begin{center}
+      \verb+$\exists x(\phi(x) \land \psi(x))$+,
+      \end{center}
+    \item a bulleted list as 
+\begin{verbatim}
+\begin{itemize}
+  \item \LaTeX{} documents do not contain ...
+  \item ...
+\end{itemize}
+\end{verbatim}
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\LaTeX{} is a Programming Language}
+
+\begin{itemize}
+\item The commands of \LaTeX{} (and the underlying \TeX{} system) are
+  \emph{also} a full-fledged programming language.
+\item This allows you to customize your typesetting environment for
+  special purposes.
+\item It makes \LaTeX{} extremely flexible and powerful.
+\item It also makes it very complex, and sometimes very frustrating.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{A Simple \LaTeX{} Document}
+
+\begin{verbatim}
+\documentclass{article}
+
+\usepackage{biblatex}
+\addbibresource{latex4phi.bib}
+
+\title{A Simple \LaTeX{} Document}
+\author{Richard Zach}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+A skeleton file illustrating the basic components of a \LaTeX{}
+ document.
+\end{abstract}
+
+\section{Introduction}
+
+\LaTeX{} was originally developed in 1985, based on the \TeX{}
+ typesetting system released by Don Knuth in 1979
+ \cite{Knuth1986,Lamport1986}.
+
+\printbibliography
+
+\end{document}
+
+\end{verbatim}
+
+
+
+\section*{Who Should Use \LaTeX{}?}
+
+\begin{frame}
+\frametitle{Use \LaTeX{} if \dots }
+
+\begin{itemize}
+\item Your writing includes lots of formulas (logic or mathematics). 
+  \begin{itemize}
+  \item logicians 
+  \item formal epistemologists
+  \item philosophers of physics
+  \item philosophers of mathematics
+  \end{itemize}
+
+\item You have to include text in other languages or alphabets, code,
+or diagrams.
+\begin{itemize}
+\item philosophers of language (phrase structure trees)
+\item ancient philosophers (greek text with diacritics)
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Use \LaTeX{} if \dots}
+
+\begin{itemize}
+\item You want no control (and hence not have to worry about) the
+  layout of your writing.
+
+\begin{articleonly}
+If you use \LaTeX{} and stay away from formatting commands, your
+typeset output will basically be guaranteed to look good.  You can
+change the look of your paper very easily and without having to format
+every single paragraph.  This can be done in Word, but is much more
+cumbersome than in \LaTeX.
+\end{articleonly}
+
+\item You want complete control over the layout of your writing and
+  produce professionally typeset output.
+
+\begin{articleonly}
+On the other hand, if you want to typeset your writing professionally,
+\LaTeX{} is about as capable as professional typesetting
+software. Packages like \cite{memoir} are designed to produce
+print-ready books according to traditional publishing standards. This
+is hard to do in Word.
+\end{articleonly}
+
+\item You are fussy about typography.
+
+\begin{articleonly}
+Word processors such Word have come a long way in turning text into
+type on the page---in part because of the sophisticated algorithms
+that underly the \TeX{} system.  \LaTeX{} understands kerning, line
+spacing, hyphenation, its typefaces have ligatures, its \textsc{small
+  caps} aren't just scaled-down capitals, and it makes it easy to keep
+your hyphens, en, and em-dashes straight.
+\end{articleonly}
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Use \LaTeX{} if \dots}
+
+\begin{itemize}
+\item You have financial or ideological objections against commercial
+  software.
+
+\begin{articleonly}
+\LaTeX{} and basically everything around \LaTeX{} is free because it's
+all open source. To do the same kinds of things you can do with
+\LaTeX{} for free, you'd need Word, PowerPoint (or Keynote), EndNote,
+Acrobat Pro, and maybe InDesign.
+\end{articleonly}
+
+\item You want your work to be future-proof.
+
+\begin{articleonly}
+\LaTeX{} documents are plain text documents. Proprietary document
+formats change and become obsolete.
+\end{articleonly}
+
+\item You want your work to be available consistently across platforms.
+
+\begin{articleonly}
+A \LaTeX{} document compiles the same on a Windows, Mac, or Unix
+machine.  A Word file may lose fonts, formatting, page breaks if you
+open it on a Mac or with a program other then the very version of Word
+you generated it on.  A PDF presentation generatedby
+\LaTeX{}willdisplay the same on any computer, but you might not even
+be able to open a Keynote presentation.
+\end{articleonly}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Use \LaTeX{} if \dots}
+
+\begin{itemize}
+\item You want to stop worrying about bibliographies.
+
+\begin{articleonly}
+\LaTeX{} comes with sophisticated bibliography handling. You can keep
+your bibliography in a separate \BibTeX{} file (which is also a simple
+text file), refer to bibliography entries in your text (e.g., as
+\verb+\cite{Quine1951}+ and \LaTeX{} will not only print ``Quine
+(1951)'' in the text but also include the correct entry in your
+bibliography, formatted according to your preferred format.
+\end{articleonly}
+
+\item You want reliable tables of contents, crossreferences, and maybe
+  even indexes.
+
+\begin{articleonly}
+Because a \LaTeX{} is logically marked up (e.g., using \verb+section+}
+  commands) and not visually formatted directly, it will alwaysbe
+  clear what's a chapter heading and what's a section. Producing a
+  table of contents is as easy as typing \verb+\tableofcontents+.
+\end{articleonly}
+
+\item You get easily sidetracked by techy things.
+
+\begin{articleonly}
+If you're the kind of person who has to understand the inner workings
+of things, is tempted to take things apart, improve them, or repurpose
+them---then be prepared to spend a lot of time tinkering with
+\LaTeX. You may find yourself writing your own package files, or
+wasting weeks on making your documents be just a little bit more
+beautiful. This is not a good idea if you have a dissertation to
+finish.
+\end{articleonly}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{}
+
+\begin{itemize}
+
+\begin{articleonly}
+\end{articleonly}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{}
+
+\begin{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{}
+
+\begin{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+\end{document}

@@ -1,0 +1,17 @@
+
+\setjobnamebeamerversion{latex4phi.beamer}
+
+\title{\LaTeX{} for Philosophers}
+
+\author{Richard Zach}
+
+\begin{document}
+
+\maketitlepage
+
+\tableofcontents
+
+\section{What is \LaTeX?}
+
+\begin{frame}
+  \frametitle{
