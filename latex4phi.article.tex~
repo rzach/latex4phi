@@ -1,7 +1,0 @@
-\documentclass{article}
-
-\usepackage{beamerarticle}
-
-\setjobnamebeamerversion{latex4phi.beamer}
-
-\input{latex4phi}
