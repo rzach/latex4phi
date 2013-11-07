@@ -301,17 +301,31 @@ changes will looklike
 \begin{frame}[fragile]{Don't Use \LaTeX{} if \dots}
 
 \begin{itemize}
-\item You are technophobic.
+\item You think it's just ridiculous that you should have to \emph{debug} a
+  \emph{document} before printing it.
+
+\begin{articleonly}
+Every \LaTeX{} document is a program, and \LaTeX{} won't give you a
+shiny PDF unless your document compiles without errors.  That means
+you might have to spendsome time ironing out the kinks in your
+document.  Mostly it'll just be typos or a forgotten ``\texttt{\}}.''
+Sometimes it'll make you want to rip your hair out.
+\end{articleonly}
+
+\item You have better things to do than to \emph{learn} a word
+  processing program.
 
 \begin{articleonly}
 \LaTeX{}, like much of open-source software written by Comp Sci types,
-isn't exactly user friendly. If you don't want to read a manual or
-shudder at the thought of using a command-line terminal for anything
-(or don't know what that is!) then think twice before installing
-\LaTeX. Maybe stick with the online editors or LyX.
+isn't exactly user friendly. If you don't want to read a manual, learn
+commands, or shudder at the thought of using a command-line terminal
+for anything (or don't know what that is!) then think twice before
+installing \LaTeX. Maybe stick with the online editors or LyX.
 \end{articleonly}
 
-\item You get easily frustrated.
+\item You have better things to do than spend half a
+  day on the internet to figure out how to change the page margins of
+  your document.
 
 \begin{articleonly}
 \LaTeX{} is very powerful and can do lots of things---but it's often
@@ -321,7 +335,7 @@ because \LaTeX{} is so widely used, it's also likely that you'll find
 the answer (maybe even among your facebook friends.)
 \end{articleonly}
 
-\item You get easily sidetracked by techy things.
+\item You are in danger of getting sidetracked by nerdy techy things.
 
 \begin{articleonly}
 If you're the kind of person who has to understand the inner workings
@@ -378,11 +392,18 @@ options, install it on your computer
 \frametitle{Useful Tools: Editors}
 
 \begin{itemize}
+\item A good \LaTeX-awareeditor is important:
+\begin{itemize}
+\item Help you learn commands and save typing
+\item Useful for previewing and debugging
+\item Spell checker has to go around commands
+\end{itemize}
 \item \href{http://pages.uoregon.edu/koch/texshop/texshop.html}{TeXShop}
  seems to be the most widely used editor for Mac (included in MacTeX).
 \item \href{http://www.tug.org/texworks/}{TeXworks} is an editor 
 modelled after TeXShop but available for Mac, Windows, and Linux 
 (included in MacTeX and TeXLive for Windows)
+\item There are \href{http://en.wikipedia.org/wiki/Comparison_of_TeX_editors}{many others}!
 \end{itemize}
 
 \end{frame}
@@ -507,14 +528,43 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 
 \end{frame}
 
+\section{Conclusion}
+\mode<presentation>{\subsection{}}
 
+\begin{frame}{Conclusion}
+
+\begin{itemize}
+\item It's good to know what \LaTeX{} is---even if you don't want to
+  use it---and now you do
+\item You might have to or want to use it some or most of the time 
+\begin{itemize}
+\item Lots of people use it, even some publishers
+\item It makes really pretty documents
+\item It might give you an edge for a job
+\item Once you've learned to use it, it can be a big time saver
+\item If your documents are simple, using \LaTeX{} can be simple too 
+\end{itemize}
+\item You know the pitfalls and dangers
+\begin{itemize}
+\item It's rough around the edges
+\item Don't get sucked in---your work is more important!
+\end{itemize}
+\end{itemize}
+\end{frame}
 
 \begin{frame}{More Reading}
 
 \begin{itemize}
+\item Everything \LaTeX{} related can be found on the
+  \href{http://www.ctan.org/}{Comprehensive \TeX{} Archive Network
+    CTAN}
 \item \href{http://en.wikibooks.org/wiki/LaTeX}{WikiBooks: \LaTeX}
-\item \href{http://individual.utoronto.ca/williecostello/latex.html}{\LaTeX{} for Luddites (An Ancient Philosopher's Guide)}
-\item \href{http://www.logicmatters.net/latex-for-logicians/}{\LaTeX{}for Logicians}
+\item
+  \href{http://individual.utoronto.ca/williecostello/latex.html}{\LaTeX{}
+    for Luddites (An Ancient Philosopher's Guide)}
+\item
+  \href{http://www.logicmatters.net/latex-for-logicians/}{\LaTeX{}for
+    Logicians}
 \item Need a symbol in \LaTeX? Try
   \href{http://detexify.kirelabs.org/classify.html}{Detexify}
 \end{itemize}
