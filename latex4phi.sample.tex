@@ -1,8 +1,12 @@
-\documentclass{article}
+\documentclass[11pt]{article}
 
-\usepackage{biblatex}
+\usepackage[greek,english]{babel}
+\usepackage[style=authoryear,
+  citestyle=authoryear,
+  backend=bibtex]{biblatex}
 \addbibresource{latex4phi.bib}
 
+\selectlanguage{english}
 \title{A Simple \LaTeX{} Document}
 \author{Richard Zach}
 
@@ -10,16 +14,13 @@
 
 \maketitle
 
-\begin{abstract}
-A skeleton file illustrating the basic components of a \LaTeX{}
- document.
-\end{abstract}
-
 \section{Introduction}
 
 \LaTeX{} was originally developed in 1985, based on the \TeX{}
- typesetting system released by Don Knuth in 1979
- \cite{Knuth1986,Lamport1986}.
+typesetting system released by Don Knuth in 1979
+\parencite{Lamport1986,Knuth1986}.  You can \emph{easily} set 
+formulas like $\exists x(\phi(x) \land \psi(x))$, or greek text, e.g.,
+when discussing Aristotle's \textgreek{>'apeiron}.
 
 \printbibliography
 
