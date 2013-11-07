@@ -120,6 +120,22 @@ greek text, e.g., when discussing Aristotle's
 \includegraphics[height=15cm,clip=true,trim=4cm 5cm 4cm 5cm]{latex4phi-sample}
 \end{frame}
 
+\begin{frame}[fragile]{Bib\TeX{} Bibliography Files}
+
+\begin{itemize}
+\item Bibiographic references can be generated and formatted automatically
+\item Format of Bib\TeX{} databases is simple and support is widespread  
+\begin{verbatim}
+@article{Thomson1971,
+    author = {Thomson, Judith Jarvis},
+    title = {A Defense of Abortion},
+    journal = {Philosophy \& Public Affairs},
+    pages = {47--66},
+    volume = {1},
+    year = {1971}}
+\end{verbatim}
+\end{itemize}
+\end{frame}
 
 \section{Who Should Use \LaTeX{}?}
 \mode<presentation>{\subsection{}}
@@ -265,9 +281,11 @@ presentation.
 \begin{itemize}
 \item Other people who don't use \LaTeX{} have to work with your document.
 \begin{itemize}
-\item Non-\LaTeX-using supervisors won't be able to comment on your document
-\item Non-\LaTeX-using collaborators won't be able to make changes
-\item {\color{red}Non-\LaTeX-using publishers will make you convert your document to Word.}
+\item Non-\LaTeX-using supervisors who want to comment on your 
+electronic document
+\item Non-\LaTeX-using collaborators who want to see what their 
+changes will looklike
+\item {\color{red} Publishers who insist on Word files.}
 \end{itemize}
 \item \dots but if you are committed, there are ways around these problems:
 \begin{itemize}
