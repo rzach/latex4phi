@@ -1,7 +1,12 @@
+% LaTeX for Philosophers
+% Richard Zach
+% http://github.com/rzach/latex4phi
+
+% This file is included by latex4phi-beamer and latex4phi-article and
+% will not compile by itself
 
 \usepackage{hyperref}
 \usepackage{graphicx}
-%\setbeamercovered{dynamic}
   \beamersetuncovermixins
   {\opaqueness<1>{50}\opaqueness<2>{30}\opaqueness<3>{15}\opaqueness<4->{5}}%
   {\opaqueness<1>{50}\opaqueness<2>{30}\opaqueness<3>{15}\opaqueness<4->{5}}
@@ -174,19 +179,17 @@ or diagrams, or you need sophisticated typesetting
   layout of your writing.
 
 \begin{articleonly}
-If you use \LaTeX{} and stay away from formatting commands, your
-typeset output will basically be guaranteed to look good.  You can
-change the look of your paper very easily and without having to format
-every single paragraph.  This can be done in Word, but is much more
-cumbersome than in \LaTeX.
+If you use \LaTeX{}, your typeset output will basically be guaranteed
+to look good.  You can change the look of your paper very easily and
+without having to format every single paragraph.  This can be done in
+Word, but is much more cumbersome than in \LaTeX.
 
-There are very man styles that make sure your typeset document has the
-right appearance: type size, margins, numbering of headers, etc. This
-can make it very easy to prepare certain kinds of documents---e.g.,
-manuscripts for journals or presses that have a \LaTeX{} house style,
-or a dissertation (most universities have a thesis style including the
-\href{http://grad.ucalgary.ca/current/thesis/latex-template}{University
-  of Calgary}.
+There are very many styles that make sure your typeset document has
+the right appearance: type size, margins, numbering of headers,
+etc. This can make it very easy to prepare certain kinds of
+documents---e.g., manuscripts for journals or presses that have
+a \LaTeX{} house style, or a dissertation (most universities have
+a \LaTeX{} thesis style or class).
 \end{articleonly}
 
 \item You want complete control over the layout of your writing and
@@ -219,6 +222,10 @@ Because a \LaTeX{} is logically marked up (e.g., using \verb+section+
 commands) and not visually formatted directly, it will always be clear
 what's a chapter heading and what's a section. Producing a table of
 contents is as easy as typing \texttt{\textbackslash tableofcontents}.
+\LaTeX{} has sophisticated support for ``floats,'' such as figures and
+tables, which it will place automatically in such a way that the rest
+of the text appears well-balanced on the page. Of course it will also
+automatically generate lists of tables and figures.
 \end{articleonly}
 
 \item You are fussy about typography.
@@ -228,8 +235,8 @@ Word processors such Word have come a long way in turning text into
 type on the page---in part because of the sophisticated algorithms
 that underly the \TeX{} system.  \LaTeX{} understands kerning, line
 spacing, hyphenation, its typefaces have ligatures, its \textsc{small
-  caps} aren't just scaled-down capitals, and it makes it easy to keep
-your hyphens, en, and em-dashes straight.
+caps} aren't just scaled-down capitals, and it makes it easy to keep
+your hyphens, en-, and em-dashes straight.
 \end{articleonly}
 \end{itemize}
 
@@ -302,7 +309,7 @@ changes will look like;
 \begin{articleonly}
 Every \LaTeX{} document is a program, and \LaTeX{} won't give you a
 shiny PDF unless your document compiles without errors.  That means
-you might have to spendsome time ironing out the kinks in your
+you might have to spend some time ironing out the kinks in your
 document.  Mostly it'll just be typos or a forgotten ``\texttt{\}}.''
 Sometimes it'll make you want to rip your hair out.
 \end{articleonly}
@@ -362,7 +369,7 @@ finish.
 \begin{itemize}
 \item There are online \LaTeX{} editors, e.g.,
 \begin{itemize}
-\item \href{https://www.writelatex.com/}{WriteLaTeX} and 
+\item \href{https://www.overleaf.com/}{Overleaf} and 
 \item \href{https://www.sharelatex.com/}{ShareLaTeX}
 \end{itemize}
 Nothing to install, documents live in the cloud, share and collaborate.
@@ -387,9 +394,9 @@ options, install it on your computer
 \frametitle{Useful Tools: Editors}
 
 \begin{itemize}
-\item A good \LaTeX-awareeditor is important:
+\item A good \LaTeX-aware editor is important:
 \begin{itemize}
-\item Help you learn commands and save typing
+\item Helps you learn commands and save typing
 \item Useful for previewing and debugging
 \item Spell checker has to go around commands
 \end{itemize}
@@ -398,7 +405,9 @@ options, install it on your computer
 \item \href{http://www.tug.org/texworks/}{TeXworks} is an editor 
 modelled after TeXShop but available for Mac, Windows, and Linux 
 (included in MacTeX and TeXLive for Windows)
-\item There are \href{http://en.wikipedia.org/wiki/Comparison_of_TeX_editors}{many others}!
+\item There are
+  \href{http://en.wikipedia.org/wiki/Comparison_of_TeX_editors}{many
+    others}!
 \end{itemize}
 
 \end{frame}
@@ -407,9 +416,17 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 \frametitle{Useful Tools: Bibliography Management}
 
 \begin{itemize}
-\item \href{http://bibdesk.sourceforge.net/}{BibDesk} is a bibliography manager which will even keep track of the corresponding PDFs for you (Mac only, included in MacTeX)
-\item \href{http://jabref.sourceforge.net/}{JabRef} is cross-platform, so works on Windows and Linux as well.
-\item Other \href{http://en.wikipedia.org/wiki/Comparison_of_reference_management_software}{reference managers} like \href{http://www.citeulike.org/}{CiteULike}, \href{http://www.mendeley.com/}{Mendeley}, and \href{http://www.zotero.org/}{Zotero} can import and export Bib\TeX{} files. 
+\item \href{http://bibdesk.sourceforge.net/}{BibDesk} is a
+  bibliography manager which will even keep track of the corresponding
+  PDFs for you (Mac only, included in MacTeX)
+\item \href{http://jabref.sourceforge.net/}{JabRef} is cross-platform,
+  so works on Windows and Linux as well.
+\item Other
+  \href{http://en.wikipedia.org/wiki/Comparison_of_reference_management_software}{reference
+    managers} like \href{http://www.citeulike.org/}{CiteULike},
+  \href{http://www.mendeley.com/}{Mendeley}, and
+  \href{http://www.zotero.org/}{Zotero} can import and export
+  Bib\TeX{} files.
 \end{itemize}
 
 \end{frame}
@@ -423,7 +440,7 @@ modelled after TeXShop but available for Mac, Windows, and Linux
   and from dozens of formats (and it's written by philosopher
   John MacFarlane!)---including \LaTeX
 \item \href{http://www.tug.org/applications/tex4ht/mn.html}{TeX4HT} is
-  way for \LaTeX{} to output HTML insteadof PDF---and it also can
+  way for \LaTeX{} to output HTML instead of PDF---and it also can
   output OpenDocument format. 
 \item
   \href{http://extensions.libreoffice.org/extension-center/writer2latex-1}{Write2LaTeX}
