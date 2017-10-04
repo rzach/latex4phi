@@ -5,7 +5,7 @@
 % This file is included by latex4phi-beamer and latex4phi-article and
 % will not compile by itself
 
-\usepackage{hyperref}
+\usepackage[colorlinks,allcolors=blue]{hyperref}
 \usepackage{graphicx}
   \beamersetuncovermixins
   {\opaqueness<1>{50}\opaqueness<2>{30}\opaqueness<3>{15}\opaqueness<4->{5}}%
@@ -123,8 +123,8 @@ greek text, e.g., when discussing Aristotle's
 \begin{frame}[fragile]{Bib\TeX{} Bibliography Files}
 
 \begin{itemize}
-\item Bibiographic references can be generated and formatted automatically
-\item Format of Bib\TeX{} databases is simple and support is widespread  
+\item Bibiographic references can be generated and formatted automatically.
+\item Format of Bib\TeX{} databases is simple and support is widespread.
 \begin{verbatim}
 @article{Thomson1971,
     author = {Thomson, Judith Jarvis},
@@ -154,18 +154,18 @@ greek text, e.g., when discussing Aristotle's
 \begin{itemize}
 \item Your writing includes lots of formulas (logic or mathematics). 
   \begin{itemize}
-  \item logicians 
-  \item formal epistemologists
-  \item philosophers of physics
-  \item philosophers of mathematics
+  \item logicians ,
+  \item formal epistemologists,
+  \item philosophers of physics,
+  \item philosophers of mathematics.
   \end{itemize}
 
 \item You have to include text in other languages or alphabets, code,
 or diagrams, or you need sophisticated typesetting 
 \begin{itemize}
-\item philosophers of language (phrase structure trees)
-\item ancient philosophers (greek text with diacritics)
-\item historians (for scholarly apparatus)
+\item philosophers of language (phrase structure trees),
+\item ancient philosophers (greek text with diacritics),
+\item historians (for scholarly apparatus).
 \end{itemize}
 
 \end{itemize}
@@ -387,8 +387,8 @@ Nothing to install, documents live in the cloud, share and collaborate.
 \begin{itemize}
 \item When you want more speed, control, a better editor, or advanced 
 options, install it on your computer
-\item For Mac, get \href{http://www.tug.org/mactex/}{MacTex}
-\item For everything else, get \href{http://www.tug.org/texlive/}{TeX Live}
+\item For Mac, get \href{http://www.tug.org/mactex/}{MacTex}.
+\item For everything else, get \href{http://www.tug.org/texlive/}{TeX Live}.
 \end{itemize}
 
 \end{frame}
@@ -399,15 +399,15 @@ options, install it on your computer
 \begin{itemize}
 \item A good \LaTeX-aware editor is important:
 \begin{itemize}
-\item Helps you learn commands and save typing
-\item Useful for previewing and debugging
-\item Spell checker has to go around commands
+\item Helps you learn commands and save typing.
+\item Useful for previewing and debugging.
+\item Spell checker has to go around commands.
 \end{itemize}
 \item \href{http://pages.uoregon.edu/koch/texshop/texshop.html}{TeXShop}
  seems to be the most widely used editor for Mac (included in MacTeX).
 \item \href{http://www.tug.org/texworks/}{TeXworks} is an editor 
 modelled after TeXShop but available for Mac, Windows, and Linux 
-(included in MacTeX and TeXLive for Windows)
+(included in MacTeX and TeXLive for Windows).
 \item There are
   \href{http://en.wikipedia.org/wiki/Comparison_of_TeX_editors}{many
     others}!
@@ -421,7 +421,7 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 \begin{itemize}
 \item \href{http://bibdesk.sourceforge.net/}{BibDesk} is a
   bibliography manager which will even keep track of the corresponding
-  PDFs for you (Mac only, included in MacTeX)
+  PDFs for you (Mac only, included in MacTeX).
 \item \href{http://jabref.sourceforge.net/}{JabRef} is cross-platform,
   so works on Windows and Linux as well.
 \item Other
@@ -438,15 +438,14 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 
 \begin{itemize}
 \item \href{http://www.sciweavers.org/convert-latex-to-rtf}{l2rtf}
-  is an online tool to convert \LaTeX{} to RTF
+  is an online tool to convert \LaTeX{} to RTF.
 \item \href{http://johnmacfarlane.net/pandoc/}{pandoc} can convert to
   and from dozens of formats (and it's written by philosopher
-  John MacFarlane!)---including \LaTeX
-\item \href{http://www.tug.org/applications/tex4ht/mn.html}{TeX4HT} is
-  way for \LaTeX{} to output HTML instead of PDF---and it also can
-  output OpenDocument format. 
+  John MacFarlane!)---including \LaTeX.
+\item \href{http://dlmf.nist.gov/LaTeXML/}{LaTeXML} is
+  way for \LaTeX{} to output XML or HTML instead of PDF. 
 \item
-  \href{http://extensions.libreoffice.org/extension-center/writer2latex-1}{Write2LaTeX}
+  \href{https://extensions.libreoffice.org/extensions/writer2latex-1}{Write2LaTeX}
   is an extension that lets
   \href{http://www.libreoffice.org/}{LibreOffice} export to \LaTeX{}
 \item Use these and Word/LibreOffice to do a word count, or directly
@@ -475,15 +474,15 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 
 \begin{itemize}
 \item \texttt{memoir} is a document class for producing anything from
-  articles to books
+  articles to books.
 \item It provides ability to customize layout of your document,
   chapter and section headings, etc.
 \item It includes many useful packages which relate to layout of:
 \begin{itemize}
-\item tables
-\item tables of contents
-\item page headers
-\item endnotes
+\item tables,
+\item tables of contents,
+\item page headers,
+\item endnotes.
 \end{itemize}
 \end{itemize}
 
@@ -507,12 +506,12 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 \item The ``standard'' way to do bibliographic references
 \item Supports author-year style:
 \begin{itemize}
-\item \verb+\citep{Quine1951}+ produces a parenthetical citation: (Quine 1951)
-\item \verb+\citet{Quine1951}+ produces an in-text citation: Quine~(1951)
+\item \verb+\citep{Quine1951}+ produces a parenthetical citation: (Quine 1951).
+\item \verb+\citet{Quine1951}+ produces an in-text citation: Quine~(1951).
 \end{itemize}
 \item Works with Bib\TeX{} to turn bibliography databases into
-  bibliographies for your document
-\item Most journals have bibliography styles that work with \texttt{natbib} 
+  bibliographies for your document.
+\item Most journals have bibliography styles that work with \texttt{natbib}.
 \end{itemize}
 
 \end{frame}
@@ -520,13 +519,13 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 \begin{frame}{Bibliographies: \texttt{biblatex}}
 
 \begin{itemize}
-\item The modern way to do bibliographies in \LaTeX
+\item The modern way to do bibliographies in \LaTeX.
 \item Supports not only author-year style but also in-text citations
   and footnoted references (footnotes contain bibliographic
-  information, with or without separate bibliography)
-\item Supports bibliography databases in the cloud
+  information, with or without separate bibliography).
+\item Supports bibliography databases in the cloud.
 \item Journals unlikely to support \texttt{biblatex} yet
-\item Most conversion programs don't work 
+\item Most conversion programs don't work.
 \end{itemize}
 
 \end{frame}
@@ -534,11 +533,11 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 \begin{frame}{Presentations: \texttt{beamer}}
 
 \begin{itemize}[<+->]
-\item Produces presentations as PDFs (use full-screen mode)
-\item Comes with many predefined themes
-\item Lets audience track progress through presentation
-\item Generate handout and presentation from same document
-\item Supports ``overlays'' to gradually uncover text
+\item Produces presentations as PDFs (use full-screen mode).
+\item Comes with many predefined themes.
+\item Lets audience track progress through presentation.
+\item Generate handout and presentation from same document.
+\item Supports ``overlays'' to gradually uncover text.
 \end{itemize}
 
 \end{frame}
@@ -550,18 +549,18 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 
 \begin{itemize}
 \item It's good to know what \LaTeX{} is---even if you don't want to
-  use it---and now you do
-\item You might have to or want to use it some or most of the time 
+  use it---and now you do.
+\item You might have to or want to use it some or most of the time.
 \begin{itemize}
-\item Lots of people use it, even some publishers
-\item It makes really pretty documents
-\item It might give you an edge for a job (RA, editorial assistant)
-\item Once you've learned to use it, it can be a big time saver
-\item If your documents are simple, using \LaTeX{} can be simple too 
+\item Lots of people use it, even some publishers.
+\item It makes really pretty documents.
+\item It might give you an edge for a job (RA, editorial assistant).
+\item Once you've learned to use it, it can be a big time saver.
+\item If your documents are simple, using \LaTeX{} can be simple too.
 \end{itemize}
-\item You know the pitfalls and dangers
+\item You know the pitfalls and dangers:
 \begin{itemize}
-\item It's rough around the edges
+\item It's rough around the edges.
 \item Don't get sucked in---your work is more important!
 \end{itemize}
 \end{itemize}
@@ -572,16 +571,16 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 \begin{itemize}
 \item Everything \LaTeX{} related can be found on the
   \href{http://www.ctan.org/}{Comprehensive \TeX{} Archive Network
-    CTAN}
-\item \href{http://en.wikibooks.org/wiki/LaTeX}{WikiBooks: \LaTeX}
+    CTAN}.
+\item \href{http://en.wikibooks.org/wiki/LaTeX}{WikiBooks: \LaTeX}.
 \item
   \href{http://individual.utoronto.ca/williecostello/latex.html}{\LaTeX{}
-    for Luddites (An Ancient Philosopher's Guide)}
+    for Luddites (An Ancient Philosopher's Guide)}.
 \item
   \href{http://www.logicmatters.net/latex-for-logicians/}{\LaTeX{} for
-    Logicians}
+    Logicians}.
 \item Need a symbol in \LaTeX? Try
-  \href{http://detexify.kirelabs.org/classify.html}{Detexify}
+  \href{http://detexify.kirelabs.org/classify.html}{Detexify}.
 \end{itemize}
 
 \end{frame}
