@@ -5,15 +5,16 @@
 % This file is included by latex4phi-beamer and latex4phi-article and
 % will not compile by itself
 
-\usepackage[colorlinks,allcolors=blue]{hyperref}
-\usepackage{graphicx}
-  \beamersetuncovermixins
+\usepackage{hyperref,graphicx,verbatim}
+
+\beamersetuncovermixins
   {\opaqueness<1>{50}\opaqueness<2>{30}\opaqueness<3>{15}\opaqueness<4->{5}}%
   {\opaqueness<1>{50}\opaqueness<2>{30}\opaqueness<3>{15}\opaqueness<4->{5}}
 
 \newenvironment{articleonly}{\mode<article>}{\mode<all>}
 
 \mode<presentation>{\usetheme{Frankfurt}}
+\mode<article>{\hypersetup{colorlinks,allcolors=blue}}
 
 \title{\LaTeX{} for Philosophers}
 
@@ -84,35 +85,9 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile,allowframebreaks]{A Simple \LaTeX{} Document}
+\begin{frame}[fragile,allowframebreaks,containsverbatim]{A Simple \LaTeX{} Document}
 
-\begin{verbatim}
-\documentclass[11pt]{article}
-
-\usepackage[citestyle=authoryear,style=authoryear]{biblatex}
-\addbibresource{latex4phi.bib}
-\usepackage[greek,english]{babel}
-
-\title{A Simple \LaTeX{} Document}
-\author{Richard Zach}
-
-\begin{document}
-
-\maketitle
-
-\section{Introduction}
-
-\LaTeX{} was originally developed in 1985, based on the 
-\TeX{} typesetting system released by Don Knuth in 1979
-\parencite{Lamport1986,Knuth1986}.  You can \emph{easily} 
-set  formulas like $\exists x(\phi(x) \land \psi(x))$, or 
-greek text, e.g., when discussing Aristotle's 
-\textgreek{>'apeiron}.
-
-\printbibliography
-
-\end{document}
-\end{verbatim}
+\verbatiminput{latex4phi-sample}
 \end{frame}
 
 \begin{frame}
@@ -371,11 +346,8 @@ finish.
 
 \begin{itemize}
 \item There are online \LaTeX{} editors, e.g.,
-\begin{itemize}
-\item \href{https://www.overleaf.com/}{Overleaf} and 
-\item \href{https://www.sharelatex.com/}{ShareLaTeX}
-\end{itemize}
-Nothing to install, documents live in the cloud, share and collaborate.
+\href{https://www.overleaf.com/}{Overleaf}.
+(Nothing to install, documents live in the cloud, share and collaborate.)
 \item \href{http://www.lyx.org/}{LyX} is an open-source WYSIWYG editor
   that uses \LaTeX{} and runs on Windows, Mac, and Linux.
 \end{itemize}
