@@ -1,3 +1,4 @@
+% !TeX root = ./latex4phi-beamer.tex
 % LaTeX for Philosophers
 % Richard Zach
 % http://github.com/rzach/latex4phi
@@ -13,7 +14,7 @@
 
 \newenvironment{articleonly}{\mode<article>}{\mode<all>}
 
-\mode<presentation>{\usetheme{Frankfurt}}
+\mode<presentation>{\usetheme{metropolis}}
 \mode<article>{\hypersetup{colorlinks,allcolors=blue}}
 
 \title{\LaTeX{} for Philosophers}
@@ -39,7 +40,7 @@
   text and markup instructions and turns it into a typeset document
   (usually in PDF format).
 \item (Actually, \TeX{} does the typesetting, and \LaTeX{} works through \TeX.)
-\item \LaTeX{} is open source, cross-platform, and almost 30 years old.
+\item \LaTeX{} is open source, cross-platform, and almost 40 years old.
 \item \LaTeX{} comes with hundreds of \emph{packages} dealing with
   anything from producing presentation slides (such as this) to
   dealing with bibliographical references to typesetting musical
@@ -98,7 +99,7 @@
 \begin{frame}[fragile]{Bib\TeX{} Bibliography Files}
 
 \begin{itemize}
-\item Bibiographic references can be generated and formatted automatically.
+\item Bibliographic references can be generated and formatted automatically.
 \item Format of Bib\TeX{} databases is simple and support is widespread.
 \begin{verbatim}
 @article{Thomson1971,
@@ -270,8 +271,8 @@ changes will look like;
 \item \dots If you are committed, there are ways around these problems:
 \begin{itemize}
 \item Supervisors can comment on PDFs or, old-school, on paper.
-\item Online editors do allow collaboration and preview of documents
-  without having to install \LaTeX.
+\item Online editors like Overleaf do allow collaboration and preview
+  of documents without having to install \LaTeX.
 \item There are conversion programs.
 \end{itemize}
 \end{itemize}
@@ -394,13 +395,11 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 \item \href{http://bibdesk.sourceforge.net/}{BibDesk} is a
   bibliography manager which will even keep track of the corresponding
   PDFs for you (Mac only, included in MacTeX).
-\item \href{http://jabref.sourceforge.net/}{JabRef} is cross-platform,
-  so works on Windows and Linux as well.
+\item \href{http://www.zotero.org/}{Zotero} with the \href{https://retorque.re/zotero-better-bibtex/}{BetterBib\TeX{}}
+extension can keep your Bib\TeX{} files up-to-date. 
 \item Other
   \href{http://en.wikipedia.org/wiki/Comparison_of_reference_management_software}{reference
-    managers} like \href{http://www.citeulike.org/}{CiteULike},
-  \href{http://www.mendeley.com/}{Mendeley}, and
-  \href{http://www.zotero.org/}{Zotero} can import and export
+    managers} like Endnote, CiteULike, and Mendeley can import and export
   Bib\TeX{} files.
 \end{itemize}
 
@@ -463,8 +462,8 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 \begin{frame}{Linking: \texttt{hyperref}}
 
 \begin{itemize}
-\item Put hyperlinks to websites in your documents
-\item Automatically put in-document links from TOC to sections,
+\item Puts hyperlinks to websites in your documents.
+\item Automatically puts in-document links from TOC to sections,
   citations to bibliography, etc.
 \item Also lets you set options in the final PDF such as bookmarks,
   page mode, title, author, etc.
@@ -475,7 +474,7 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 \begin{frame}[fragile]{Bibliographies: \texttt{natbib}}
 
 \begin{itemize}
-\item The ``standard'' way to do bibliographic references
+\item The ``standard'' way to do bibliographic references.
 \item Supports author-year style:
 \begin{itemize}
 \item \verb+\citep{Quine1951}+ produces a parenthetical citation: (Quine 1951).
@@ -496,7 +495,7 @@ modelled after TeXShop but available for Mac, Windows, and Linux
   and footnoted references (footnotes contain bibliographic
   information, with or without separate bibliography).
 \item Supports bibliography databases in the cloud.
-\item Journals unlikely to support \texttt{biblatex} yet
+\item But: journals unlikely to support \texttt{biblatex} yet.
 \item Most conversion programs don't work.
 \end{itemize}
 
@@ -514,6 +513,19 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 
 \end{frame}
 
+\begin{frame}{Thesis styles}
+
+\begin{itemize}
+  \item Thesis styles and templates let you produce your MA or PhD
+  dissertation to FGS requirements without hassle.
+  \item There are two for UCalgary:
+  \begin{itemize}
+    \item \href{https://github.com/markwgirard/ucalgarythesis}{Mark Girard's}
+    \item \href{https://github.com/rzach/ucalgmthesis}{Richard Zach's}
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
 \section{Conclusion}
 \mode<presentation>{\subsection{}}
 
@@ -522,7 +534,7 @@ modelled after TeXShop but available for Mac, Windows, and Linux
 \begin{itemize}
 \item It's good to know what \LaTeX{} is---even if you don't want to
   use it---and now you do.
-\item You might have to or want to use it some or most of the time.
+\item You might have to or want to use it some of the time.
 \begin{itemize}
 \item Lots of people use it, even some publishers.
 \item It makes really pretty documents.
@@ -546,7 +558,7 @@ modelled after TeXShop but available for Mac, Windows, and Linux
     CTAN}.
 \item \href{http://en.wikibooks.org/wiki/LaTeX}{WikiBooks: \LaTeX}.
 \item
-  \href{http://individual.utoronto.ca/williecostello/latex.html}{\LaTeX{}
+  \href{https://williecostello.com/latex.html}{\LaTeX{}
     for Luddites (An Ancient Philosopher's Guide)}.
 \item
   \href{http://www.logicmatters.net/latex-for-logicians/}{\LaTeX{} for
